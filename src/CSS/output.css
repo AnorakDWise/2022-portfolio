@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -500,6 +504,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
+.h-\[3vh\] {
+  height: 3vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[3840px\] {
+  height: 3840px;
+}
+
+.h-\[1080px\] {
+  height: 1080px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -514,6 +534,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .-translate-x-28 {
@@ -572,6 +600,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-stone-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-defaultWallpaper {

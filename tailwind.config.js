@@ -6,6 +6,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      borderRadius: {
+        "4xl": "2rem",
+      },
+      colors: {
+        transparentWhite: "rgba(68, 64, 60, 0.50)",
+      },
+
       backgroundImage: {
         defaultWallpaper: "url('../assets/images/background.svg')",
       },

@@ -146,8 +146,18 @@
     >
       <!-- Component #1 - Introduction -->
 
-      <div class="w-full h-[1080px] flex justify-center items-center">
-        <div class="w-3/4 h-96 bg-['rgba(28, 25, 23, 0.75)']"></div>
+      <div
+        class="w-full h-[1080px] flex justify-center items-center cardComponent"
+      >
+        <div
+          class="w-4/5 h-[40rem] bg-transparentWhite rounded-4xl backdrop-blur-sm drop-shadow-defaultShadow hover:duration-200"
+          data-aos="flip-up"
+          data-aos-delay="500"
+          data-aos-duration="750"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        ></div>
       </div>
 
       <!---->
@@ -210,6 +220,21 @@
           dragTooltip.setAttribute("data-wenk", "Click to drag out!");
         }
       }
+    </script>
+
+    <!---->
+
+    <!-- vanillaTilt.js -->
+
+    <script
+      type="text/javascript"
+      src="./assets/externalScripts/vanilla-tilt.js"
+    ></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".cardComponent"), {
+        max: 0.75,
+        speed: 1000,
+      });
     </script>
 
     <!---->

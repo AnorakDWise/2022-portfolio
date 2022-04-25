@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth overflow-hidden">
+<html lang="en" class="scroll-smooth">
   <head>
     <!-- CSS -->
 
     <link rel="stylesheet" href="./CSS/output.css" />
+    <link rel="stylesheet" href="./CSS/additional.css" />
 
     <!---->
 
@@ -12,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -24,165 +25,56 @@
 
     <!---->
 
-    <!-- Wenk -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/tiaanduplessis/wenk/master/dist/wenk.css"
-    />
-
-    <!---->
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Grégory B.</title>
+    <title>Gregory Buffard</title>
   </head>
-  <body class="font-nunito bg-defaultWallpaper bg-cover bg-no-repeat bg-fixed">
-    <!-- Nav menu -->
-
-    <div class="h-screen m-auto w-full flex items-center fixed">
-      <nav
-        id="navMenu"
-        class="flex justify-evenly items-center h-96 w-32 bg-stone-800 rounded-r-2xl drop-shadow-defaultFarShadow hover:drop-shadow-defaultShadow -translate-x-28 hover:-translate-x-16 transition hover:transition duration-200 hover:duration-200 ease-in-out hover:ease-in-out"
-      >
-        <div class="h-96 w-16 flex flex-col justify-evenly items-center">
-          <a
-            href="#"
-            class="no-underline"
-            data-wenk="Introduction"
-            data-wenk-pos="right"
-          >
-            <svg
-              class="w-10 hover:drop-shadow-whiteNeon transition duration-200 ease-in-out hover:transition hover:duration-200 hover:ease-in-out fill-stone-100 hover:fill-stone-200 drop-shadow-defaultShadow"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M5 6C3.895 6 3 6.895 3 8L3 20C3 21.105 3.895 22 5 22L25 22C26.105 22 27 21.105 27 20L27 8C27 6.895 26.105 6 25 6L5 6 z M 5 9L8 9L8 11L5 11L5 9 z M 15 9C15.954 9 16.25 9.6777344 16.25 9.6777344C17.103 9.6777344 17.5 10.611031 17.5 11.707031C17.5 12.254031 17.279297 12.707031 17.279297 12.707031C17.367297 12.762031 17.514516 12.937047 17.478516 13.248047C17.410516 13.827047 17.17825 13.974328 17.03125 13.986328C16.97525 14.526328 16.189953 15.218359 16.001953 15.318359L16.001953 16.222656C16.375953 17.439656 18.451953 16.843 19.001953 19L11 19C11.55 16.843 13.626 17.439656 14 16.222656L14 15.318359C13.812 15.218359 13.026703 14.526328 12.970703 13.986328C12.823703 13.974328 12.591438 13.827047 12.523438 13.248047C12.486437 12.937047 12.631703 12.762031 12.720703 12.707031C12.720703 12.707031 12.501953 12.206031 12.501953 11.707031C12.500953 10.227031 13.233 9 15 9 z M 5 13L8 13L8 15L5 15L5 13 z M 5 17L8 17L8 19L5 19L5 17 z M 10 24 A 1.0001 1.0001 0 1 0 10 26L20 26 A 1.0001 1.0001 0 1 0 20 24L10 24 z"
-              /></svg
-          ></a>
-          <a
-            href="#"
-            class="no-underline"
-            data-wenk="About Gregory"
-            data-wenk-pos="right"
-            ><svg
-              class="w-10 hover:drop-shadow-whiteNeon transition duration-200 ease-in-out hover:transition hover:duration-200 hover:ease-in-out fill-stone-100 hover:fill-stone-200 drop-shadow-defaultShadow"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16,21h-2v-7h2V21z M15,11.5 c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S15.828,11.5,15,11.5z"
-              /></svg
-          ></a>
-          <a
-            href="#"
-            class="no-underline"
-            data-wenk="My Work"
-            data-wenk-pos="right"
-            ><svg
-              class="w-10 hover:drop-shadow-whiteNeon transition duration-200 ease-in-out hover:transition hover:duration-200 hover:ease-in-out fill-stone-100 hover:fill-stone-200 drop-shadow-defaultShadow"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M14 3C12.895 3 12 3.895 12 5L4 5C2.895 5 2 5.895 2 7L2 16C2 17.105 2.895 18 4 18L26 18C27.105 18 28 17.105 28 16L28 7C28 5.895 27.105 5 26 5L18 5C18 3.895 17.105 3 16 3L14 3 z M 15 14C15.552 14 16 14.448 16 15C16 15.552 15.552 16 15 16C14.448 16 14 15.552 14 15C14 14.448 14.448 14 15 14 z M 2 19.443359L2 23C2 24.105 2.895 25 4 25L26 25C27.105 25 28 24.105 28 23L28 19.443359C27.409 19.787359 26.732 20 26 20L4 20C3.268 20 2.591 19.787359 2 19.443359 z"
-              /></svg
-          ></a>
-          <a
-            href="#"
-            class="no-underline"
-            data-wenk="Contact Me"
-            data-wenk-pos="right"
-            ><svg
-              class="w-10 hover:drop-shadow-whiteNeon transition duration-200 ease-in-out hover:transition hover:duration-200 hover:ease-in-out fill-stone-100 hover:fill-stone-200 drop-shadow-defaultShadow"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M26 3 A 1 1 0 0 0 25.716797 3.0429688 A 1 1 0 0 0 25.636719 3.0683594L3.6503906 10.060547L3.6503906 10.064453 A 1 1 0 0 0 3 11 A 1 1 0 0 0 3.4824219 11.853516L10.164062 17.154297L23.373047 6.6269531L12.845703 19.835938L18.142578 26.513672 A 1 1 0 0 0 19 27 A 1 1 0 0 0 19.935547 26.349609L19.939453 26.349609L26.9375 4.34375 A 1 1 0 0 0 26.957031 4.2832031 A 1 1 0 0 0 27 4 A 1 1 0 0 0 26 3 z"
-              /></svg
-          ></a>
-        </div>
-        <div class="flex flex-col justify-center items-center h-96 w-16">
-          <button
-            class="flex justify-end items-center w-16 h-16 group"
-            onclick="navSwitch(); titleSwap();"
-            id="dragButton"
-            data-wenk="Click to drag out!"
-            data-wenk-pos="right"
-          >
-            <svg
-              class="fill-stone-600 -mr-6 group-hover:fill-stone-700 transition group-hover:transition duration-200 group-hover:duration-200 ease-in-out group-hover:ease-in-out"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M14.984375 0.98632812 A 1.0001 1.0001 0 0 0 14 2L14 28 A 1.0001 1.0001 0 1 0 16 28L16 2 A 1.0001 1.0001 0 0 0 14.984375 0.98632812 z"
-              />
-            </svg>
-            <svg
-              class="fill-stone-600 -ml-6 group-hover:fill-stone-700 transition group-hover:transition duration-200 group-hover:duration-200 ease-in-out group-hover:ease-in-out"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M14.984375 0.98632812 A 1.0001 1.0001 0 0 0 14 2L14 28 A 1.0001 1.0001 0 1 0 16 28L16 2 A 1.0001 1.0001 0 0 0 14.984375 0.98632812 z"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </div>
-
-    <!---->
-
-    <!-- COMPONENTS -->
-
+  <body class="font-rubik bg-stone-900">
     <div
-      class="m-auto w-4/5 h-[3840px] flex flex-col space-around items-center"
+      class="m-auto h-screen w-screen bg-[url('../assets/images/introPhoto.jpeg')] bg-[length:30%] bg-no-repeat bg-center flex justify-center items-center"
+      data-aos="fade-in"
+      data-aos-duration="500"
+      data-aos-delay="500"
+      data-aos-ease="ease-in-out"
     >
-      <!-- Component #1 - Introduction -->
-
-      <div
-        class="w-full h-[1080px] flex justify-center items-center cardComponent"
-      >
-        <div
-          class="w-4/5 h-[40rem] bg-transparentWhite rounded-4xl backdrop-blur-sm drop-shadow-defaultShadow hover:duration-200"
-          data-aos="flip-up"
-          data-aos-delay="500"
-          data-aos-duration="750"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-        ></div>
+      <div class="m-auto h-screen w-1/2 flex justify-end">
+        <h1
+          class="mix-blend-difference text-stone-100 text-7xl mt-44 italic font-bold"
+          data-aos="fade-down"
+          data-aos-duration="500"
+          data-aos-delay="1000"
+          data-aos-ease="ease-in-out"
+        >
+          Gregory Buffard
+        </h1>
       </div>
-
-      <!---->
-
-      <!-- Component #2 - About Gregory -->
-
-      <div class="w-4/5 h-[1080px] flex justify-center items-center"></div>
-
-      <!---->
-
-      <!-- Component #3 - My Work -->
-
-      <div class="w-4/5 h-[1080px] flex justify-center items-center"></div>
-
-      <!---->
-
-      <!-- Component #4 - Contact Me -->
-
-      <div class="w-4/5 h-[1080px] flex justify-center items-center"></div>
-
-      <!---->
+      <div
+        class="m-auto h-screen w-1/2 flex items-start justify-end flex-col"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="1000"
+        data-aos-ease="ease-in-out"
+      >
+        <h1
+          class="mix-blend-difference text-stone-100 text-7xl uppercase font-light"
+        >
+          web dev /<br />web designer
+        </h1>
+        <h2 class="mb-28 uppercase descriptor text-stone-400">
+          designed at default devs, inc.<br />06400 cannes, <br />branding web
+          UI/UX 02304890
+        </h2>
+      </div>
     </div>
 
-    <!---->
-
+    <div class="m-auto h-[90vh] w-screen border-4 border-stone-100">
+      <div class="m-auto w-full h-1/4 border-b-4 border-stone-100"></div>
+      <div class="m-auto w-full h-1/4 border-b-4 border-stone-100"></div>
+      <div class="m-auto w-full h-1/4 border-b-4 border-stone-100"></div>
+      <div class="m-auto w-full h-1/4"></div>
+    </div>
     <!-- AOS animations script -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -226,7 +118,7 @@
 
     <!-- vanillaTilt.js -->
 
-    <script
+    <!--<script
       type="text/javascript"
       src="./assets/externalScripts/vanilla-tilt.js"
     ></script>
@@ -235,7 +127,7 @@
         max: 0.75,
         speed: 1000,
       });
-    </script>
+    </script>-->
 
     <!---->
   </body>
